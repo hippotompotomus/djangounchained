@@ -1,0 +1,25 @@
+body {
+    background-color: red;
+    font-family: Arial, sans-serif;
+
+}
+
+h1 {
+    font-size: 30px;
+    color: #a3b1c5;
+
+}
+
+#bigboy {
+    border-style: dashed;
+    border-color: #d9b7a2;
+
+
+}
+
+.linker {
+    font-size: 30px;
+    text-decoration: none;
+
+
+}

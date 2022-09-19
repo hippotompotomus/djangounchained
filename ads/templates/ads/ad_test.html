@@ -1,0 +1,23 @@
+{% extends "base_menu.html" %}
+
+{% block content %}
+
+{% if ad.content_type %}
+
+<u>
+    <li>
+        {{ ad.content_type }}
+    </li>
+    <li>
+        {{ ad.id }}
+    </li>
+    <li>
+        {{ ad.picture }}
+    </li>
+    <li>
+        <img href="http://hippotompotomus.pythonanywhere.com{% url 'ads:ad_picture' ad.id %}">
+    </li>
+</u>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base_menu.html" %}
+
+{% block content %}
+
+<h1>Delete Ad</h1>
+
+<p>Are you sure you want to delete ad: {{ ad.title }}?</p>
+
+<form method='POST' action=''>
+    {% csrf_token %}
+    <input type="submit" value="Yes, delete.">
+
+</form>
+
+{% endblock %}

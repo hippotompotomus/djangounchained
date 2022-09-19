@@ -1,0 +1,13 @@
+{% extends "base_menu.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<p>
+<form method="POST", action="">
+{% csrf_token %}
+{{ form|crispy }}
+<input type="submit" value="Submit">
+<input type="submit" on_click="window.location("{% url 'ads:ad_detail' ad.id %})" ;" return false ;" value="Cancel">
+</form>
+</p>
+
+{% endblock %}
